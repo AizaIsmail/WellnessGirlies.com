@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wellness club</title>
+</head>
+<body>    
+    <header id="brand">
+        <img src="img/logo.png">
+    </header>
+    
+    <header id="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="recipes.html">RECIPES</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	
+	
+	<div id="image-slider-container">
+		<div id="image-slider">
+			<img id="image-show" src="img/image1.jpg">
+		</div>
+	</div>
+	
+	
+	
+	<div id="title-container">
+		<p>all the beauty products in one place</p>
+	</div>
+	
+	<div id="title-container">
+		<p>featured skincare and cosmetics brand</p>
+	</div>
+	
+	
+	
+	<div id="brands-container">
+        <img src="img/goodal.jpg">
+        <img src="img/iunik.jpg">
+        <img src="img/joseon.jpg">
+        <img src="img/anua.jpg">
+        <img src="img/axis.jpg">
+        <img src="img/yul.jpg">
+        <img src="img/cosrx.jpg">
+	</div>
+	
+	<div id="product-button">
+				<button>view all products</button>
+                
+	</div>
+	
+	<div id="pink-box">
+        <p>Girl math skincare affirmations: </p>
+        <div id="pink-box-white">
+            <div><p>~Skincare purchases are an investment in my future self. Especially sunscreen.<br>~If i use a product that works in my sleep and I sleep for eight hours. I also worked for eight hours. Its my skin so that was a joint effort<br>~If my favorite product is on sale and i dont buy it, I'm losing money<br>~Time stops while i do my skincare routine. I dont care if the clock moves. No it didnt</p></div>
+            <div>
+                <img src="img/girl.jpg">
+            </div>
+        </div>
+	</div>
+    
+    <div id="title-container">
+		<p>Want to order?</p>
+	</div>
+    
+    <div id="product-button">
+				<button>contact us</button>
+                
+	</div>
+    
+   
+    
+    
+	<script>
+	var image = document.getElementById("image-show");
+	var currentPos = 0;
+	var images = ["img/image1.jpg","img/image2.jpg","img/image3.jpg"];
+
+	function changeimg(){
+		if(++currentPos >= images.length){
+			currentPos = 0;
+		}
+		image.src = images[currentPos];
+	}
+
+	setInterval(changeimg, 4000);
+	</script>
+</body>
+</html>
+<footer>
+    <p>Thank you for visiting us!<br>
+    <a href="mailto:WellnessClub@gmail.com">WellnessClub@gmail.com</a></p>
+  </footer>
